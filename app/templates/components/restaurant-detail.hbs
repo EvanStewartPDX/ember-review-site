@@ -1,4 +1,9 @@
-<button {{action 'addToFavorites' restaurant}}>Add to Favorites List</button>
+{{#if restaurant.inList}}
+    <p> Already in List! </p>
+  {{else}}
+    <br />
+    <button class="btn btn-primary"{{action 'addToFavorites' restaurant}}>Add to Favorites List</button>
+  {{/if}}
 
 <div class="panel panel-default detail">
   <div class="row">

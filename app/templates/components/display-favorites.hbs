@@ -2,7 +2,6 @@
 <ul>
 {{#each cart.restaurants as |restaurant index|}}
   <h4>{{restaurant.name }}</h4>
-  <!-- <button {{ action 'remove' product }}>Remove from Cart</button> -->
-  <!-- {{log product}} -->
+  <button {{ action 'remove' restaurant }}>Remove from List</button> 
 {{/each}}
 </ul>

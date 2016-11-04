@@ -7,4 +7,10 @@ export default DS.Model.extend({
   image: DS.attr(),
   type: DS.attr(),
   reviews: DS.hasMany("review", {async: true}),
+
+  cart: Ember.inject.service('favorites-cart'),
+  inList: Ember.computed('cart.restaurants.[]', function(){
+    return this.get('cart').includes(this);
+  })
+
 });
