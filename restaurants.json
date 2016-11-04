@@ -4,13 +4,26 @@
     "address": "1028 SE Water Ave",
     "zip": "97214",
     "image": "https://pbs.twimg.com/profile_images/378800000412064392/9b9ba54b433b978f0804a2b1697d6d0f.jpeg",
-    "type": "American"
+    "type": "American",
+    "reviews": ""
     }, {
     "name": "La Sirenita",
     "address": "2817 NE Alberta St",
     "zip": "97211",
     "image": "http://s3-media3.fl.yelpcdn.com/bphoto/dGVwoxnKHq_FSEHWD_tKEw/o.jpg",
-    "type": "mexican"
-    }]
-
+    "type": "mexican",
+    "reviews": ""
+    }],
+  
+  "reviews": [{
+    "content": "Tasty",
+    "name": "Rory Calhoon",
+    "rating": "5",
+    "restaurant": "0"
+  }, {
+    "content": "Pretty Good",
+    "name": "Ted Coppel",
+    "rating": "4",
+    "restaurant": "1"
+  }]
 }
