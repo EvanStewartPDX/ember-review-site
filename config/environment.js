@@ -20,9 +20,9 @@ module.exports = function(environment) {
 
     firebase: {
     apiKey: "AIzaSyA1KzTsbnjZJA0mWmfHZ8QnidST-dBM6Hs",
-    authDomain: "restaurant-a0ece.firebaseapp.com",
-    databaseURL: "https://restaurant-a0ece.firebaseio.com",
-    storageBucket: "restaurant-a0ece.appspot.com"
+     authDomain: "restaurant-a0ece.firebaseapp.com",
+     databaseURL: "https://restaurant-a0ece.firebaseio.com",
+     storageBucket: "restaurant-a0ece.appspot.com"
   },
 
     APP: {

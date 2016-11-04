@@ -10,7 +10,7 @@ export default Ember.Component.extend({
      addRestaurant() {
        var params = {
          name: this.get('name') ? this.get('name') : "",
-         restaurant: this.get('restaurant') ? this.get('restaurant') : "",
+         address: this.get('address') ? this.get('address') : "",
          zip: this.get('zip') ? this.get('zip') : "",
          image: this.get('image') ? this.get('image') : "https://dummyimage.com/600x400/000/fff.png&text=??",
          type: this.get('type') ? this.get('type') : "",
