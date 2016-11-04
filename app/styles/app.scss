@@ -19,11 +19,19 @@
 }
 
 .detail {
-  max-height: 200px;
-  overflow: hidden;
+  height: 300px;
 
 }
 
 .detailimage {
-
+height: 300px;
+overflow: hidden;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border: solid black;
 }
+
+// .restaurantdetail {
+//   background-color:
+// }
