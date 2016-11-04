@@ -16,7 +16,7 @@ export default Ember.Component.extend({
          type: this.get('type') ? this.get('type') : "",
        };
      this.set('isShowingModal', false);
-     this.sendAction("addProduct", params);
+     this.sendAction("addRestaurant", params);
      this.set('name', "");
      this.set('address', "");
      this.set('zip', "");
