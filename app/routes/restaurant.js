@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model(params) {
       return this.store.findRecord('restaurant', params.restaurant_id);
   },
-
+  
   actions: {
     addReview(params){
     var newReview = this.store.createRecord('review', params);
@@ -16,5 +16,6 @@ export default Ember.Route.extend({
 
     this.transitionTo('restaurant', restaurant);
 },
-    }
+
+  }
 });
