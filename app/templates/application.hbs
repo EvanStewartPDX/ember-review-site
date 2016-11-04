@@ -4,7 +4,20 @@
     <p>Reviews To-Go</p>
   {{/link-to}}
   </header>
-    {{outlet}}
+  <div class="container">
+    <div class="row">
+      <div class='col-xs-8'>
+        {{ outlet }}
+      </div>
+      <div class='col-xs-1'>
+      </div>
+      <div class='col-xs-3 favs'>
+        <h1>Favorite Restaurants</h1>
+      </div>
+    </div>
+
+  </div>
+
   <hr>
   <footer>
     <div class="panel panel-default footer">

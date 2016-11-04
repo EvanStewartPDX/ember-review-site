@@ -1,6 +1,6 @@
 {{new-restaurant model=restaurant addRestaurant="saveRestaurant"}}
 
 {{#each model.restaurants as |restaurant|}}
-  {{restaurant-tile restaurant=restaurant}}
-  
+  {{review-count restaurant}}{{restaurant-tile restaurant=restaurant}}
+
 {{/each}}
