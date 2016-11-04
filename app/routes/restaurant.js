@@ -7,14 +7,14 @@ export default Ember.Route.extend({
 
   actions: {
     addReview(params){
-            var newReview = this.store.createRecord('review', params);
-            var restaurant = params.restaurant;
-            restaurant.get('reviews').addObject(newReview);
-            newReview.save().then(function() {
-              return question.save();
-            });
+    var newReview = this.store.createRecord('review', params);
+    var restaurant = params.restaurants;
+    restaurant.get('reviews').addObject(newReview);
+    newReview.save().then(function() {
+      return restaurant.save();
+    });
 
-            this.transitionTo('restaurant', restaurant.id);
-      },
+    this.transitionTo('restaurant', restaurant);
+},
     }
 });

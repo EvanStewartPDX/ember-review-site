@@ -1,15 +1,14 @@
-<div class="well detail">
+<div class="panel panel-default detail">
   <div class="row">
     <div class="col-xs-4">
       <h1>{{restaurant.name }}</h1><br />
     </div>
     <div class="col-xs-4 detailimage">
-      <!-- <img src='{{restaurant.image }}'> -->
+      <img src='{{restaurant.image }}'>
     </div>
     </div>
-  <div class="well review">
-    {{#each restaurant.reviews as |review|}}
-      {{review-tile review=review}}
-    {{/each}}
-  </div>
 </div>
+
+{{#each restaurant.reviews as |review|}}
+  {{review-tile review=review}}
+{{/each}}
