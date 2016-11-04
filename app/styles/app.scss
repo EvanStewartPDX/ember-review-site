@@ -34,16 +34,26 @@
 
 .detail {
   height: 300px;
-
+h1 {
+  font-size: 4em;
+}
 }
 
-.detailimage {
+.restaurantdetail {
 height: 300px;
 overflow: hidden;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-border: solid black;
+color: white;
+text-align: center;
+color: white ;
+text-overflow: inherit;
+text-shadow:  -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
 }
 
 .wellcart {
@@ -70,3 +80,8 @@ border: solid black;
   text-align: center;
   background-color: #d4f3f7;
 }
+
+.map-display {
+    height: 600px;
+    width: 600px;
+  }

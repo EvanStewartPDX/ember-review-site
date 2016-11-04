@@ -7,14 +7,17 @@
 
 <div class="panel panel-default detail">
   <div class="row">
-    <div class="col-xs-6 restaurantdetail">
+    <div class="col-xs-6 restaurantdetail" style="background-image: url('{{restaurant.image }}')">
       <h1>{{restaurant.name }}</h1><br />
       <h3>{{restaurant.address}}, {{restaurant.zip}}</h3>
       <h3><b>{{restaurant.type}}</b></h3>
     </div>
-    <div class="col-xs-6 detailimage" style="background-image: url('{{restaurant.image }}')" >
+    <div class="col-xs-6">
+      <div class="map-display">
+      {{google-map restaurant=restaurant}}
+      </div>
     </div>
-    </div>
+  </div>
 </div>
 
 {{#each restaurant.reviews as |review|}}
