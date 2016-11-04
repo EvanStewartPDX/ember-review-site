@@ -1,10 +1,12 @@
 <div class= "container">
-  <header class= "jumbotron">
   {{#link-to 'index'}}
-    <p>Reviews To-Go</p>
-  {{/link-to}}
+  <header class= "jumbotron">
+
+    <p style="text-decoration:none">Reviews To-Go</p>
+
   </header>
-  <div class="container">
+  {{/link-to}}
+
     <div class="row">
       <div class='col-xs-8'>
         {{ outlet }}
@@ -12,11 +14,14 @@
       <div class='col-xs-1'>
       </div>
       <div class='col-xs-3 favs'>
+        <div class="well wellcart">
         <h1>Favorite Restaurants</h1>
+        <hr>
         {{display-favorites}}
+        </div>
       </div>
     </div>
-  </div>
+
 
   <hr>
   <footer>
