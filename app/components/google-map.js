@@ -1,15 +1,16 @@
 import Ember from 'ember';
-
+var map;
 export default Ember.Component.extend({
-
+  map: Ember.inject.service('google-map'),
   actions: {
-  showMap(restaurant) {
-    var container = this.$('.map-display')[0];
-    var options = {
-    center: this.get('map').center(rental.get('address'), rental.get('zip')),
-      zoom: 15
-    };
-    this.get('map').findMap(container, options);
+    showMap(restaurant) {
+      var container = this.$('.map-display')[0];
+      var options = {
+        center: this.get('map').center(restaurant.get('address'), restaurant.get('zip')),
+        zoom: 15
+
+      };
+      map = this.get('map').findMap(container, options);
     }
   }
 });
