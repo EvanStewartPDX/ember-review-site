@@ -12,7 +12,7 @@
       <h1>{{restaurant.name }}</h1><br />
       <h3>{{fullAddress}}</h3>
       <h3><b>{{restaurant.type}}</b></h3>
-      {{log fullAddress}}
+    
     </div>
     <!-- <div class="col-xs-5">
 
@@ -22,8 +22,9 @@
   </div>
 </div>
 <div class="reviewtile">
-<p>Reviews</p>
-{{#each restaurant.reviews as |review|}}
-  {{review-tile review=review}}
-{{/each}}
+  <p>Reviews</p>
+  <!-- <h5> rating:{{avg-rating restaurant.reviews}} </h5> -->
+  {{#each restaurant.reviews as |review|}}
+    {{review-tile review=review}}
+  {{/each}}
 </div>

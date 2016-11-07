@@ -20,7 +20,7 @@
       <div class="form-group">
         <label for="rating">Rating</label>
         <!-- {{star-rating value=rating id="rating" rating=review.rating on-click="updateRating"}} -->
-        {{input value=rating id="rating" type=number class="form-control" required="required"}}
+        {{input value=rating id="rating" type="number" class="form-control" required="required" max="10" min="1"}}
       </div>
 
       <button class="btn btn-success">Add</button>
