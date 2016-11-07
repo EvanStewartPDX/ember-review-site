@@ -3,18 +3,20 @@
   <header class= "jumbotron">
 
     <p>Reviews To-Go</p>
+    {{#link-to 'index'}}
+    <div class="homelink">
+      <h3>Home</h3>
+        </div>
+    {{/link-to}}
 
   </header>
-  {{#link-to 'index'}}
-  <h3>Home</h3>
-  {{/link-to}}
+
 
     <div class="row">
-      <div class='col-xs-8'>
+      <div class='col-xs-8' style="margin-left: 20px;">
         {{ outlet }}
       </div>
-      <div class='col-xs-1'>
-      </div>
+
       <div class='col-xs-3 favs'>
         <div class="well wellcart">
         <h1>Favorite Restaurants</h1>

@@ -1,5 +1,6 @@
 {{new-restaurant model=restaurant addRestaurant="addRestaurant"}}
-
+<div class="restauranttile">
 {{#each model.restaurants as |restaurant|}}
   {{restaurant-tile restaurant=restaurant}}
 {{/each}}
+</div>

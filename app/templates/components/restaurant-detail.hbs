@@ -10,8 +10,9 @@
   <div class="row">
     <div class="col-xs-12 restaurantdetail" style="background-image: url('{{restaurant.image }}')">
       <h1>{{restaurant.name }}</h1><br />
-      <h3>{{restaurant.address}}, {{restaurant.zip}}</h3>
+      <h3>{{fullAddress}}</h3>
       <h3><b>{{restaurant.type}}</b></h3>
+      {{log fullAddress}}
     </div>
     <!-- <div class="col-xs-5">
 
@@ -20,7 +21,9 @@
     </div> -->
   </div>
 </div>
-
+<div class="reviewtile">
+<p>Reviews</p>
 {{#each restaurant.reviews as |review|}}
   {{review-tile review=review}}
 {{/each}}
+</div>
