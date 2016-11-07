@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
 
+actions: {
   googleMaps: window.google.maps,
   findMap(container, options) {
     return new this.googleMaps.Map(container, options);
@@ -23,4 +24,5 @@ export default Ember.Service.extend({
       return new this.googleMaps.address(address, zip);
     });
   }
+}
 });
