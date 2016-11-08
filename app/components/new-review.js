@@ -12,7 +12,7 @@
            content: this.get('content'),
            author: this.get('author'),
            rating: this.get('rating'),
-           restaurants: this.get('restaurant'),
+           restaurants: this.get('restaurant')
 
 
          };
@@ -20,7 +20,7 @@
        this.sendAction("addReview", params);
        this.set('content', "");
        this.set('author', "");
-       this.set('taring', "");
+       this.set('rating', "");
        }
      }
 
